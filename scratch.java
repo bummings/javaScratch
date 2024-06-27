@@ -1,20 +1,31 @@
-// Write a program that collects two integer inputs and assigns them to the variables starting_num and multiplier. Multiply starting_ num by multiplier and output the result. Repeat this process two more times, each time multiplying the previous result by multiplier. The three product outputs should be separated by a whitespace character, ending with a newline.
-
 import java.util.Scanner;
 
 public class scratch {
-   public static void main(String[] args) {
-      Scanner scnr = new Scanner(System.in); 
-      System.out.println("Enter starting number: ");
-      int starting_num = scnr.nextInt();
-      System.out.println("Enter multiplier: ");
-      int multiplier = scnr.nextInt();
+    public static void main(String[] args) {
+        /* Write a program that takes a full name, age, and salary as inputs on separate lines. Output a formatted message containing the inputs, ending with a newline. Ensure your program output matches the example formatting below and works for a variety of input values.
+        If the input is:
+            Pat Ford
+            35
+            60,000
+        the output is:
+            Pat Ford is 35 and makes $60,000.
+*/
+        String name = "";
+        int age = 0;
+        double salary = 0.0;
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("name: ");
+        name = scanner.nextLine();
+        System.out.print("age: ");
+        age = scanner.nextInt();
+        System.out.print("salary: ");
+        salary = scanner.nextDouble();
+        
 
-      int initialResult = (starting_num * multiplier);
-      
-      for (int i = 0; i < 3; i++) {
-          System.out.println(initialResult);
-      }
-      scnr.close();
-   }
+        System.out.println("OK bro " + name);
+        
+        scanner.close();
+    }
 }
