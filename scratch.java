@@ -1,8 +1,54 @@
-import java.util.Scanner;
+// import java.util.ArrayList;
+// import java.util.Collections;
+// import java.util.Scanner;
+import java.util.*;
+
 
 public class scratch {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
+// Write a program that collects any number of non-negative integer inputs and 
+// calculates the sum of the values. A negative integer should end the input collection and 
+// is not part of the sum.
+// Output the smallest non-negative value and the sum of the non-negative input values, ending 
+// with a newline. Ensure your program output matches the example formatting below and works for 
+// a variety of input values.
+// If the input is:
+// 15
+// 20
+// 0
+// 3
+// -1
+// the output is:
+// Smallest: 0
+// Sum: 38
+
+    ArrayList<Integer> numbers = new ArrayList<>();
+    System.out.println("Please enter a number: ");
+    while (true) {
+        int input = scanner.nextInt();
+        
+
+        if (input >= 0) {
+            numbers.add(input);
+        }
+        if (input == -1) {
+            int smallest = Collections.min(numbers);
+            System.out.println("Smallest: " + smallest);
+            
+            int sum = 0;
+            for (int number : numbers) {
+                sum += number;
+            };
+
+            System.out.println("Sum: " + sum);
+            // System.out.println("Sum: ");
+            break;
+        }
+        System.out.println(numbers);
+    }
+
 
             // 6. Write a program that collects a full name as one string input.
             // Format and output the name as shown: 
@@ -12,25 +58,23 @@ public class scratch {
             // Ex: input is Edd Allen Bummings, output is B. Edd A,
 
             
-            System.out.println("Please enter your full name. ");
-            String fullName = scanner.nextLine();
+            // System.out.println("Please enter your full name. ");
+            // String fullName = scanner.nextLine();
             
-            String[] nameParts = fullName.split(" ");
+            // String[] nameParts = fullName.split(" ");
 
-            if (nameParts.length == 3) {
-                System.out.println("First name: " + nameParts[0]);
-                System.out.println("Last name is: " + nameParts[2]);
-                System.out.println("Middle name is: " + nameParts[1]);
-                String formattedName = nameParts[2] + ", " + nameParts[0].charAt(0) + ". " + nameParts[1].charAt(0) + ".";
-                System.out.println(formattedName);
-            } else if (nameParts.length == 2) {
-                System.out.println("First name: " + nameParts[0]);
-                System.out.println("Last name is: " + nameParts[1]);
-                String formattedName = nameParts[1] + ", " + nameParts[0].charAt(0) + ".";
-                System.out.println(formattedName);
-            } 
-
-
+            // if (nameParts.length == 3) {
+            //     System.out.println("First name: " + nameParts[0]);
+            //     System.out.println("Last name is: " + nameParts[2]);
+            //     System.out.println("Middle name is: " + nameParts[1]);
+            //     String formattedName = nameParts[2] + ", " + nameParts[0].charAt(0) + ". " + nameParts[1].charAt(0) + ".";
+            //     System.out.println(formattedName);
+            // } else if (nameParts.length == 2) {
+            //     System.out.println("First name: " + nameParts[0]);
+            //     System.out.println("Last name is: " + nameParts[1]);
+            //     String formattedName = nameParts[1] + ", " + nameParts[0].charAt(0) + ".";
+            //     System.out.println(formattedName);
+            // } 
 
 
 
