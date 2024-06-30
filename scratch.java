@@ -2,22 +2,36 @@ import java.util.*;
 
 
 public class scratch {
+    
+    public static boolean showResults(int turns) {
+        Random rand = new Random();
+        return rand.nextInt(2) == 1;
+    }
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("how many times bruh? ");
+        int turns = scanner.nextInt();
 
-            // Debt ratio is a ratio of total debt to total assets, calculated using the formula: Total Debt / Total Assets
-            // The DebtMeasure.java file contains existing code that collects input for totalDebt and totalAssets, then passes the inputs into the Debt object's calculateDR method. The code then returns the debtRatio using the Debt object's getDR method.
-            // Write code in the Debt class of Debt.java that has the following field and methods:
-            // • debtRatio: private field of type double
-            // • calculateDR: public method with two parameter variables of type double for totalDebt and totalAssets
-            // • The calculateDR method should calculate the debt ratio and assign the results to the debtRatio field.
-            // • Use the method signature public void calculateDR(double totalDebt, double totalAssets).
-            // • getDR: public accessor method that returns the debtRatio field value
-            // Ensure your program output matches the example formatting below and works for a variety of input values.
-            // If the input is: 250000 300000 the output when 250000 is the total debt and 300000 is the total assets is: The Company's total debt is in the amount of $250,000.00, and total assets are in the amount of $300,000.00, which gives a debt ratio of 0.83.
+        for (int i = 0; i < turns; i++) {
+            // Random rand = new Random();
+            boolean result = showResults(12);
+            System.out.println(result);
+        }
         
         
-    
+
+            // 9. Define a method named "showResults" with one parameter. The parameter should reference a random object `rand`. If the random number generated is equal to 1, return true. If the random number generated is equal to 0, return false.
+
+            // In the main() method template, the `rand` variable has already been assigned a random object with a seed value of 2. Write a program that collects one iteger value as input, assumed to be greater than 0. Use a loop to call the `showResults()` method a number of times equal to the integer input. Ex: If 3 is entered as input, then `showResults()` will be called 3 times, each time returning either true or false. Output the returned booelan values on separate lines, ending with a newline. 
+
+            // If the input is: 3, the output with a random object seed value of 2 is:
+            // true
+            // false
+            // true 
+
+
             // 8. Write a program that creates an array to hold three values of type double. The program 
             // should collect the three double values as input and store them in the array. Then calculate 
             // the average value of the array.
