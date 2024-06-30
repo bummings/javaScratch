@@ -1,6 +1,13 @@
 public class Debt {
-    public void OK() {
-        System.out.println("OK");
 
+    private double debtRatio;
+
+    public void calculateDR (double totalDebt, double totalAssets) {
+        debtRatio = (totalDebt / totalAssets);
     }
+
+    public double getDR() {
+            return debtRatio;
+        }
 }
+
