@@ -1,4 +1,6 @@
-// // ZyBooks Practice Lab 5: A number is divisible by 3 if the sum of its digits is divisible by 3. For example, 153 is divisible by 3 because 1 + 5 + 3 = 9 and 9 is divisible by 3.
+// // ZyBooks Practice Lab 5 TAKEAWAY: conditional OR operators need to explicitly evaluate each one, one by one
+
+// // A number is divisible by 3 if the sum of its digits is divisible by 3. For example, 153 is divisible by 3 because 1 + 5 + 3 = 9 and 9 is divisible by 3.
 
 // // Write a program that collects three integer inputs representing the place values of a three-digit number. Determines whether the sum of the digits is divisible by 3. If any integer entered is a negative value, output Invalid input!
 
@@ -56,7 +58,9 @@
 
 
 
-// // ZyBooks Practice Lab 4: Write a program that takes a full name, age, and salary as inputs on separate lines. Output a formatted message containing the inputs, ending with a newline. Ensure your program output matches the example formatting below and works for a variety of input values.
+// // ZyBooks Practice Lab 4  TAKEAWAY: need to clear the input stream buffer when switching from int's to string's and vice versa
+
+// // Write a program that takes a full name, age, and salary as inputs on separate lines. Output a formatted message containing the inputs, ending with a newline. Ensure your program output matches the example formatting below and works for a variety of input values.
 
 // // If the input is:
 
