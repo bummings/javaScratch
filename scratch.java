@@ -1,39 +1,97 @@
-// Write a program that takes a full name, age, and salary as inputs on separate lines. Output a formatted message containing the inputs, ending with a newline. Ensure your program output matches the example formatting below and works for a variety of input values.
+// // ZyBooks Practice Lab 5: A number is divisible by 3 if the sum of its digits is divisible by 3. For example, 153 is divisible by 3 because 1 + 5 + 3 = 9 and 9 is divisible by 3.
 
-// If the input is:
+// // Write a program that collects three integer inputs representing the place values of a three-digit number. Determines whether the sum of the digits is divisible by 3. If any integer entered is a negative value, output Invalid input!
 
-// Pat Ford
-// 35
-// 60,000
-// the output is:
+// // Output a formatted message identifying if the three-digit number is divisible by 3, ending with a newline. Ensure your program output matches the example formatting below and works for a variety of input values.
 
-// Pat Ford is 35 and makes $60,000.
+// // If the input is:
 
-import java.util.*;
+// // 1
+// // 5
+// // 3
+// // the output is:
 
-public class scratch {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+// // 153 is divisible by 3!
+// // Alternatively, if the input is:
+
+// // 1
+// // 0
+// // 4
+// // the output is:
+
+// // 104 is not divisible by 3!
+// // Alternatively, if the input is:
+
+// // 1
+// // -5
+// // 3
+// // the output is:
+
+// // Invalid input!
+
+
+// import java.util.Scanner;
+
+// public class scratch {
+//    public static void main(String[] args) {
+//       Scanner scnr = new Scanner(System.in);         
+      
+//       int num1 = scnr.nextInt();
+//       int num2 = scnr.nextInt();
+//       int num3 = scnr.nextInt();
+//       int total = (num1 + num2 + num3);
+
+//       if (num1 < 0 || num2 < 0 || num3 < 0) {
+//          System.out.println("Invalid input!");
+//       } else if (total % 3 == 0) {
+//          // System.out.println(num1 + num2 + num3 + " is divisible by 3!");
+//          System.out.println("" + num1 + num2 + num3 + " is divisible by 3!");
+//       } else if (total %3 != 0) {
+//          System.out.println("" + num1 + num2 + num3 + " is not divisible by 3!");
+//       } else System.out.println(23);
+
+//       scnr.close();
+//    }
+// }
+
+
+
+// // ZyBooks Practice Lab 4: Write a program that takes a full name, age, and salary as inputs on separate lines. Output a formatted message containing the inputs, ending with a newline. Ensure your program output matches the example formatting below and works for a variety of input values.
+
+// // If the input is:
+
+// // Pat Ford
+// // 35
+// // 60,000
+// // the output is:
+
+// // Pat Ford is 35 and makes $60,000.
+
+// import java.util.*;
+
+// public class scratch {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
               
-        String name = "";
-        int age = 0;
-        String salary = "";
+//         String name = "";
+//         int age = 0;
+//         String salary = "";
         
-        name = scanner.nextLine();
-        System.out.println(name);
+//         name = scanner.nextLine();
+//         System.out.println(name);
         
-        age = scanner.nextInt();
-        scanner.nextLine();
-        System.out.println(age);
+//         age = scanner.nextInt();
+//         scanner.nextLine();
+//         System.out.println(age);
         
-        salary = scanner.nextLine();
-        System.out.println(salary + "\n");
+//         salary = scanner.nextLine();
+//         System.out.println(salary + "\n");
         
-        System.out.println(name + " is " + age + " and makes " + salary + ".");
+//         System.out.println(name + " is " + age + " and makes " + salary + ".");
               
-        scanner.close();
-    }
-   }
+//         scanner.close();
+//     }
+//    }
 
     // public static boolean showResults(int turns) {
     //     Random rand = new Random();
