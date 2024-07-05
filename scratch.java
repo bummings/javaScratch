@@ -1,24 +1,35 @@
 import java.util.*;
-
-
 public class scratch {
-    
-    public static boolean showResults(int turns) {
-        Random rand = new Random();
-        return rand.nextInt(2) == 1;
-    }
-    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+              
+        String name = "";
+        int age = 0;
+        int salary = 0;
         
-        System.out.println("how many times bruh? ");
-        int turns = scanner.nextInt();
+        name = scanner.nextLine();
+        System.out.println(name);
+              
+        scanner.close();
+    }
+   }
 
-        for (int i = 0; i < turns; i++) {
-            // Random rand = new Random();
-            boolean result = showResults(12);
-            System.out.println(result);
-        }
+    // public static boolean showResults(int turns) {
+    //     Random rand = new Random();
+    //     return rand.nextInt(2) == 1;
+    // }
+    
+    // public static void main(String[] args) {
+    //     Scanner scanner = new Scanner(System.in);
+        
+    //     System.out.println("how many times bruh? ");
+    //     int turns = scanner.nextInt();
+
+    //     for (int i = 0; i < turns; i++) {
+    //         // Random rand = new Random();
+    //         boolean result = showResults(12);
+    //         System.out.println(result);
+    //     }
         
         
 
@@ -208,6 +219,3 @@ public class scratch {
             //  System.out.println(name + "is " + age + " and makes " + salary +".");
     
 
-        scanner.close();
-    }
-}
