@@ -1,26 +1,41 @@
+import java.util.ArrayList;
+
 public class Customer {
-    private String name;
-    private int age;
+   private int id;
+   private String name;
+   
+   //Create a Grocery ArrayList
+   ArrayList<Grocery> groceryList = new ArrayList<Grocery>();
+   
+   
+   // Define getGroceryList() method that returns Grocery ArrayList  
+   public ArrayList<Grocery> getGroceryList() {
+      return groceryList;
+   }
+  
+    
+//  Define addGrocery(Grocery grocery) that adds a Grocery object to Grocery ArrayList via the grocery parameter
+   public void addGrocery(Grocery grocery) {
+      groceryList.add(grocery);
+   }
+   
+   
+   public int getId() {
+      return id;
+   }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+   public void setId(int id) {
+      this.id = id;
+   }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+   public String getName() {
+      return name;
+   }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void printInfo() {
-        System.out.println("Customer that is older:");
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-    }
+   public void setName(String name) {
+      this.name = name;
+   }
+   
+   
+   
 }
